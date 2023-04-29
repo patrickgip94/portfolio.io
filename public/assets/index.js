@@ -14,6 +14,7 @@ import tailwindcss from '../assets/tailwind.png'
 import vercel from '../assets/vercel.png';
 import typescript from '../assets/typescript.png'
 import github from '../assets/github.png'
+import rentit from '../assets/rentit2.png';
 
 export {
   javascript,
@@ -31,5 +32,6 @@ export {
   tailwindcss,
   vercel,
   typescript,
-  github
+  github,
+  rentit
 }

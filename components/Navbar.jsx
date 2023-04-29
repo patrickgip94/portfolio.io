@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useTypewriter } from "react-simple-typewriter";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 // ICONS
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
@@ -11,6 +11,18 @@ import { FcDocument } from "react-icons/fc";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+  const [shadow, setShadow] = useState(false);
+
+  useEffect(() => {
+    const handleShadow = () => {
+      if (window.scrollY >= 90) {
+        setShadow(true);
+      } else {
+        setShadow(false);
+      }
+    };
+    window.addEventListener("scroll", handleShadow);
+  });
 
   const handleNav = () => {
     setNav(!nav);
@@ -21,7 +33,13 @@ const Navbar = () => {
     delaySpeed: 3000,
   });
   return (
-    <div className="fixed w-full h-20 shadow-xl z-[100]">
+    <div
+      className={
+        shadow
+          ? "fixed w-full h-20 shadow-xl z-[100]"
+          : "fixed w-full h-20 z-[100]"
+      }
+    >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16 bg-white">
         <Link href="/">
           <Image
@@ -39,16 +57,16 @@ const Navbar = () => {
               <Link href="/">Home</Link>
             </li>
             <li className="ml-10 text-sm uppercase border-b border-transparent hover:border-b-blue-500">
-              <Link href="/">About</Link>
+              <Link href="/#about">About</Link>
             </li>
             <li className="ml-10 text-sm uppercase border-b border-transparent hover:border-b-blue-500">
-              <Link href="/">Skills</Link>
+              <Link href="/#skills">Skills</Link>
             </li>
             <li className="ml-10 text-sm uppercase border-b border-transparent hover:border-b-blue-500">
-              <Link href="/">Projects</Link>
+              <Link href="/#projects">Projects</Link>
             </li>
             <li className="ml-10 text-sm uppercase border-b border-transparent hover:border-b-blue-500">
-              <Link href="/">Contact</Link>
+              <Link href="/#contact">Contact</Link>
             </li>
           </ul>
 

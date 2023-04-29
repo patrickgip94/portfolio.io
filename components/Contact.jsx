@@ -2,12 +2,68 @@ import Link from "next/link";
 import { FaLinkedin, FaGithub, FaAngellist } from "react-icons/fa";
 import { FcDocument } from "react-icons/fc";
 import { HiOutlineChevronDoubleUp, HiOutlineMail } from "react-icons/hi";
+import emailjs from "@emailjs/browser";
+import { useRef, useState } from "react";
 
 const Contact = () => {
+  const formRef = useRef();
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const [loading, setLoading] = useState(false);
+
+  const handleChange = (e) => {
+    const { target } = e;
+    const { name, value } = target;
+
+    setForm({ ...form, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    emailjs
+      .send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+        {
+          from_name: form.name,
+          to_name: "Patrick",
+          from_email: form.email,
+          to_email: "gippatrick94@gmail.com",
+          message: form.message,
+        },
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+      )
+      .then(
+        () => {
+          setLoading(false);
+          alert("Thank you, I will get back to you as soon as possible!");
+
+          setForm({
+            name: "",
+            email: "",
+            message: "",
+          });
+        },
+        (error) => {
+          setLoading(false);
+
+          console.log(error);
+
+          alert("Oh no! Something went wrong. Please try again.");
+        }
+      );
+  };
+
   return (
-    <div className="w-full lg:h-screen">
+    <div id="contact" className="w-full lg:h-screen">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
-        <p className="text-xl tracking-widest uppercase text-[#5651E5] font-bold">
+        <p className="text-xl tracking-widest uppercase text-[#5651E5] font-bold py-6">
           Contact
         </p>
         <h2 className="py-4">Get In Touch</h2>
@@ -101,23 +157,17 @@ const Contact = () => {
           {/* Right */}
           <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
             <div className="p-4">
-              <form>
+              <form onSubmit={handleSubmit} ref={formRef}>
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                   <div className="flex flex-col">
                     {/* NAME */}
                     <label className="uppercase text-sm py-2">Name</label>
                     <input
                       type="text"
-                      className="border-2 rounded-lg p-3 flex border-gray-300"
-                    />
-                  </div>
-                  {/* PHONE */}
-                  <div className="flex flex-col">
-                    <label className="uppercase text-sm py-2">
-                      Phone Number
-                    </label>
-                    <input
-                      type="text"
+                      name="name"
+                      onChange={handleChange}
+                      value={form.name}
+                      placeholder="What's your name?"
                       className="border-2 rounded-lg p-3 flex border-gray-300"
                     />
                   </div>
@@ -128,6 +178,10 @@ const Contact = () => {
                   <label className="uppercase text-sm py-2">Email</label>
                   <input
                     type="email"
+                    name="email"
+                    value={form.email}
+                    onChange={handleChange}
+                    placeholder="What's your email?"
                     className="border-2 rounded-lg p-3 flex border-gray-300"
                   />
                 </div>
@@ -135,6 +189,7 @@ const Contact = () => {
                   <label className="uppercase text-sm py-2">Subject</label>
                   <input
                     type="text"
+                    onChange={handleChange}
                     className="border-2 rounded-lg p-3 flex border-gray-300"
                   />
                 </div>
@@ -142,12 +197,20 @@ const Contact = () => {
                   <label className="uppercase text-sm py-2">Message</label>
                   <textarea
                     type="text"
+                    name="message"
+                    value={form.message}
+                    onChange={handleChange}
+                    placeholder="Leave a message :D"
                     className="border-2 rounded-lg p-3 border-gray-300"
                     rows={10}
                   />
                 </div>
-                <button className="w-full p-4 text-gray-100 mt-4">
-                  Send Message
+                <button
+                  type="submit"
+                  className="bg-white py-3 px-8 outline-none w-fit text-black
+                  font-bold shadow-primary shadow-md rounded-xl"
+                >
+                  {loading ? "Sending..." : "Send"}
                 </button>
               </form>
             </div>

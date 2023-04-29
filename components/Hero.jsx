@@ -11,7 +11,7 @@ const Hero = () => {
     delaySpeed: 3000,
   });
   return (
-    <div>
+    <div id="home">
       {/* BACKGROUND IMAGE */}
       <img
         className="w-full h-screen object-cover shadow-2xl shadow-gray-500 border-gray-400 border-b-[3px]"

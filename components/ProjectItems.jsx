@@ -4,8 +4,8 @@ import Image from "next/image";
 const ProjectItems = ({ title, backgroundImg, projectUrl, tools }) => {
   return (
     <div
-      className="relative flex items-center justify-center h-auto w-full shadow-xl 
-  shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r 
+      className="relative flex items-center justify-center h-auto w-[100%] shadow-xl 
+  shadow-gray-400 rounded-xl p-2 group hover:bg-gradient-to-r 
   from-[#5651E5] to-[#709DFF]"
     >
       <Image
@@ -25,7 +25,7 @@ const ProjectItems = ({ title, backgroundImg, projectUrl, tools }) => {
         </p>
         <Link href={projectUrl} target="_blank">
           <p
-            className="text-center py-3 rounded-lg bg-white
+            className="text-center py-3 px-2 rounded-lg bg-white
          text-gray-700 font-bold text-lg cursor-pointer hover:bg-blue-200 hover:ease-in duration-300"
           >
             More Info
