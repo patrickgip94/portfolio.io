@@ -4,16 +4,13 @@ import onlyPansImage from "../public/assets/onlyPansImage.png";
 
 const Projects = () => {
   return (
-    <div
-      className="w-full border-b-[3px] 
-    border-black transition ease-in-out duration-300"
-    >
+    <div className="w-full shadow-sm">
       <div className="max-w-[1240px] mx-auto px-2 py-16">
         <p className="text-2xl tracking-widest uppercase text-[#5651E5] py-4 font-bold">
           Projects
         </p>
         <h2 className="py-4">What I've Built</h2>
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-10">
           <ProjectItems
             title="Laynie's Word Adventure"
             backgroundImg={layniesWord}

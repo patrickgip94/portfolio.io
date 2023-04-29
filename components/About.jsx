@@ -1,9 +1,6 @@
 const About = () => {
   return (
-    <div
-      className="w-full md:h-screen p-2 flex items-center py-16 border-b-[3px] 
-    border-black transition ease-in-out duration-300"
-    >
+    <div className="w-full md:h-screen p-2 flex items-center py-16 shadow-sm">
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <div className="col-span-2">
           <p className="uppercase text-2xl tracking-widest text-[#5651E5] font-bold">

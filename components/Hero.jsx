@@ -14,8 +14,7 @@ const Hero = () => {
     <div>
       {/* BACKGROUND IMAGE */}
       <img
-        className="w-full h-screen object-cover border-b-[3px] 
-        border-black transition ease-in-out duration-300"
+        className="w-full h-screen object-cover shadow-2xl shadow-gray-500 border-gray-400 border-b-[3px]"
         src="https://media2.giphy.com/media/N3yLGQ1oMYfGU/giphy.gif?cid=ecf05e47lsvfpf463w5de2cphyko3psndtc0v7hc3cy4rxwm&ep=v1_gifs_search&rid=giphy.gif&ct=g"
         alt="pic"
       />

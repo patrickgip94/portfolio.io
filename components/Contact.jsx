@@ -1,6 +1,7 @@
+import Link from "next/link";
 import { FaLinkedin, FaGithub, FaAngellist } from "react-icons/fa";
 import { FcDocument } from "react-icons/fc";
-import { HiOutlineMail } from "react-icons/hi";
+import { HiOutlineChevronDoubleUp, HiOutlineMail } from "react-icons/hi";
 
 const Contact = () => {
   return (
@@ -24,14 +25,22 @@ const Contact = () => {
                   alt="image"
                 />
               </div>
-              <div className="">
+              <div>
+                <h2 className="py-2">Patrick Gip</h2>
+                <p className="font-semibold">Front-End Developer</p>
+                <p className="py-2">
+                  I am currently open to considering opportunities for freelance
+                  work or full-time employment.. Contact me and let&apos;s talk!
+                </p>
+              </div>
+              <div>
                 <p
-                  className="uppercase pt-8 font-semibold flex items-center justify-center 
-                border-b border-gray-500"
+                  className="uppercase pt-8 pb-4 font-semibold flex items-center justify-center 
+                border-b border-gray-500 "
                 >
                   Connect with me
                 </p>
-                <div className="flex items-center justify-center py-4">
+                <div className="flex items-center justify-center py-6">
                   <div className="flex items-center justify-between space-x-5">
                     <a
                       href="https://www.linkedin.com/in/patrickgip94/"
@@ -90,7 +99,67 @@ const Contact = () => {
           </div>
 
           {/* Right */}
-          <div></div>
+          <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
+            <div className="p-4">
+              <form>
+                <div className="grid md:grid-cols-2 gap-4 w-full py-2">
+                  <div className="flex flex-col">
+                    {/* NAME */}
+                    <label className="uppercase text-sm py-2">Name</label>
+                    <input
+                      type="text"
+                      className="border-2 rounded-lg p-3 flex border-gray-300"
+                    />
+                  </div>
+                  {/* PHONE */}
+                  <div className="flex flex-col">
+                    <label className="uppercase text-sm py-2">
+                      Phone Number
+                    </label>
+                    <input
+                      type="text"
+                      className="border-2 rounded-lg p-3 flex border-gray-300"
+                    />
+                  </div>
+                </div>
+
+                {/* EMAIL */}
+                <div className="flex flex-col py-2">
+                  <label className="uppercase text-sm py-2">Email</label>
+                  <input
+                    type="email"
+                    className="border-2 rounded-lg p-3 flex border-gray-300"
+                  />
+                </div>
+                <div className="flex flex-col py-2">
+                  <label className="uppercase text-sm py-2">Subject</label>
+                  <input
+                    type="text"
+                    className="border-2 rounded-lg p-3 flex border-gray-300"
+                  />
+                </div>
+                <div className="flex flex-col py-2">
+                  <label className="uppercase text-sm py-2">Message</label>
+                  <textarea
+                    type="text"
+                    className="border-2 rounded-lg p-3 border-gray-300"
+                    rows={10}
+                  />
+                </div>
+                <button className="w-full p-4 text-gray-100 mt-4">
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        {/* BACK TO TOP */}
+        <div className="flex justify-center py-12">
+          <Link href="/">
+            <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
+              <HiOutlineChevronDoubleUp className="text-[#5651E5]" size={30} />
+            </div>
+          </Link>
         </div>
       </div>
     </div>

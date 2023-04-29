@@ -3,10 +3,7 @@ import { technologies } from "@/pages/constants";
 
 const Skills = () => {
   return (
-    <div
-      className="w-full lg:h-screen p-2 border-b-[3px] 
-    border-black transition ease-in-out duration-300"
-    >
+    <div className="w-full lg:h-screen p-2 shadow-sm">
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center items-centers h-full">
         <p className="text-2xl tracking-widest uppercase text-[#5651E5] py-4 font-bold">
           Skills
