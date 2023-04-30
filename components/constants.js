@@ -84,4 +84,4 @@ const technologies = [
   },
 ]
 
-export {technologies}
+export { technologies }
