@@ -192,6 +192,7 @@ const Contact = () => {
                   <label className="uppercase text-sm py-2">Subject</label>
                   <input
                     type="text"
+                    placeholder="Subject Title"
                     onChange={handleChange}
                     className="border-2 rounded-lg p-3 flex border-gray-300"
                   />
