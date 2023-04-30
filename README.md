@@ -1,38 +1,87 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+
+  <h1 align="center">Patrick's Portfolio</h1>
+</div>
+
+
+
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
+
+
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+[LIVE](https://gippatrick94.vercel.app/)
+
+### Built With
+
+* [Next.js 13.3](https://nextjs.org/docs) Next.js is an open-source React-based framework for building server-side rendered (SSR) and statically generated (SSG) web applications.
+* [TailwindCSS](https://v2.tailwindcss.com/docs) A utility-first CSS framework for React
+* [React Icons](https://react-icons.github.io/react-icons/) React-icons is a popular open-source library that provides a collection of customizable icons for use in React-based web applications.
+* [Vercel](https://vercel.com/docs) Vercel is a cloud platform that provides tools and infrastructure for deploying and hosting static websites, serverless functions, and full-stack web applications.
+
+
+
+
+<!-- GETTING STARTED -->
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+You need React.js installed or updated
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+* npm (version 18+)
+  ```sh
+  npm install --legacy-peer-deps
+  ```
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### Installation
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+_To get this project up and running follow these steps._
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+1. Clone the repo
+   ```sh
+   git clone https://github.com/patrickgip94/portfolio.io.git
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+2. Install NPM packages
+   ```sh
+   npm install --legacy-peer-deps
+   ```
 
-## Learn More
+3. Run Project
+   ```sh
+   npm run dev
+   ```
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<!-- CONTACT -->
+## Contact
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Linkedln - [@Patrick Gip](https://www.linkedin.com/in/patrickgip94/)
+Email - GipPatrick94@gmail.com
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
