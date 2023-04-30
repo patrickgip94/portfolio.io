@@ -134,7 +134,7 @@ const Navbar = () => {
             </ul>
             <div className="pt-40">
               <p className="uppercase tracking-widest text-[#5651E5] text-lg font-bold">
-                Let's Connect
+                Contact Me
               </p>
 
               {/* SOCIAL LINK */}
