@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>☕ Patrick's Portfolio</title>
+        <title>☕ Patrick&apos;s Portfolio</title>
         <link rel="icon" href="/" />
       </Head>
       <Navbar />

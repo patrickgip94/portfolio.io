@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['skillicons.dev']
+    domains: ['media2.giphy.com', 'skillicons.dev', 'i.imgur.com', 'images.unsplash.com']
   }
 }
 

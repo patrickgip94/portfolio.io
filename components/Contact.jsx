@@ -4,6 +4,7 @@ import { FcDocument } from "react-icons/fc";
 import { HiOutlineChevronDoubleUp, HiOutlineMail } from "react-icons/hi";
 import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
+import Image from "next/image";
 
 const Contact = () => {
   const formRef = useRef();
@@ -75,10 +76,12 @@ const Contact = () => {
           >
             <div className="lg:p-4 h-full">
               <div>
-                <img
+                <Image
                   className="rounded-xl hover:scale-105 ease-in duration-300"
                   src="https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80"
                   alt="image"
+                  width={500}
+                  height={500}
                 />
               </div>
               <div>

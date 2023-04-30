@@ -1,5 +1,6 @@
 // UTILITIES
 import { useTypewriter } from "react-simple-typewriter";
+import Image from "next/image";
 
 // ICONS
 import { FaLinkedin, FaGithub, FaAngellist } from "react-icons/fa";
@@ -13,19 +14,23 @@ const Hero = () => {
   return (
     <div id="home">
       {/* BACKGROUND IMAGE */}
-      <img
+      <Image
         className="w-full h-screen object-cover shadow-2xl shadow-gray-500 border-gray-400 border-b-[3px]"
         src="https://media2.giphy.com/media/N3yLGQ1oMYfGU/giphy.gif?cid=ecf05e47lsvfpf463w5de2cphyko3psndtc0v7hc3cy4rxwm&ep=v1_gifs_search&rid=giphy.gif&ct=g"
         alt="pic"
+        width={100}
+        height={100}
       />
       {/* BACKGROUND OPACITY */}
       <div className="w-full h-screen absolute top-0 left-0 bg-black/60">
         {/* PROFILE IMAGE */}
         <div className="max-w-[700px] mx-auto h-full w-full flex flex-col justify-center items-center">
-          <img
+          <Image
             src="https://i.imgur.com/ei6znvX.png"
             alt="Selfie :)"
             className="relative rounded-full h-36 w-36 object-cover border-2"
+            width={100}
+            height={100}
           />
           <h2
             className="text-lg sm:text-2xl font-bold uppercase text-gray-200 
