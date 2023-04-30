@@ -8,7 +8,7 @@ const Projects = () => {
     <div id="projects" className="w-full shadow-sm">
       <div className="max-w-[1240px] mx-auto px-2 py-16">
         <p className="text-2xl tracking-widest uppercase text-[#5651E5] py-4 font-bold">
-          Projects
+          My Projects
         </p>
         <h2 className="py-4">Projects</h2>
         <div className="grid md:grid-cols-3 gap-8">
