@@ -44,7 +44,7 @@ const Navbar = () => {
         <Link href="/">
           <Image
             src="https://i.imgur.com/tjxGEwB.png"
-            alt="logo"
+            alt="/"
             width="175"
             height="75"
             className="hover:cursor-pointer"
