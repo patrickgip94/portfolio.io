@@ -34,7 +34,7 @@ const Hero = () => {
           />
           <h2
             className="text-lg sm:text-2xl font-bold uppercase text-gray-200 
-            pb-2 pt-2 tracking-[10px] sm:tracking-[15px]"
+            pb-2 pt-2 tracking-[5px] sm:tracking-[10px]"
           >
             Software Developer
           </h2>

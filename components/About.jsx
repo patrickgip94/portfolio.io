@@ -28,7 +28,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="w-full md:h-screen p-2 flex items-center py-16 shadow-sm"
+      className="w-full md:h-screen p-2 flex items-center py-16 shadow-sm pt-28"
     >
       <div className="max-w-[1240px] m-auto md:grid grid-cols-2 gap-8">
         <div className="col-span-2 grid grid-cols-1 md:grid-cols-2 gap-8">

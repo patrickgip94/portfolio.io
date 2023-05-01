@@ -88,19 +88,23 @@ const Navbar = () => {
               : "fixed left-[-100%] top-0 bg-[white] p-10 ease-in duration-500"
           }
         >
-          <div>
+          <div className="">
             <div className="flex w-full items-center justify-between">
               <Image
                 src="/../public/assets/patlogo.png"
                 alt="logo"
                 width="175"
                 height="50"
+                className="pr-1"
               />
               <div
                 onClick={handleNav}
-                className="rounded-full shadow-lg shadow-gray-400 p-2.5 cursor-pointer"
+                className="rounded-full shadow-lg shadow-gray-400 p-2 cursor-pointer"
               >
-                <AiOutlineClose />
+                <AiOutlineClose
+                  className="hover:text-red-500 hover:scale-100 transition 
+                ease-in duration-100"
+                />
               </div>
             </div>
 
@@ -108,28 +112,41 @@ const Navbar = () => {
               className="pl-1 border-b border-gray-300 my-4"
               style={{ height: "6rem", overflow: "hidden" }} // prevents typescript from moving border bottom
             >
-              <span className="flex w-[100%] md:w-[90%] py-10 text-xl font-bold sm:text-2xl items-center justify-center">
+              <span
+                className="flex w-[100%] md:w-[90%] py-10 text-xl font-bold sm:text-2xl 
+              items-center justify-center"
+              >
                 {text}
               </span>
             </div>
           </div>
 
           <div className="py-4 flex flex-col ">
-            <ul className="uppercase font-bold">
+            <ul className="uppercase">
               <Link href="/">
-                <li className="socialText">Home</li>
+                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                  Home
+                </li>
               </Link>
-              <Link href="/">
-                <li className="socialText">About</li>
+              <Link href="/#about">
+                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                  About
+                </li>
               </Link>
-              <Link href="/">
-                <li className="socialText">Skills</li>
+              <Link href="/#skills">
+                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                  Skills
+                </li>
               </Link>
-              <Link href="/">
-                <li className="socialText">Projects</li>
+              <Link href="/#projects">
+                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                  Projects
+                </li>
               </Link>
-              <Link href="/">
-                <li className="socialText">Contact</li>
+              <Link href="/#contact">
+                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                  Contact
+                </li>
               </Link>
             </ul>
             <div className="pt-40">
@@ -138,10 +155,10 @@ const Navbar = () => {
               </p>
 
               {/* SOCIAL LINK */}
-              <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
+              <div className="flex items-center justify-between my-4 w-full sm:w-[80%] space-x-1">
                 {/* LINKEDIN */}
                 <div
-                  className="rounded-full shadow-lg shadow-gray-400 p-3 
+                  className="rounded-full shadow-lg shadow-gray-400 p-2 
                 cursor-pointer hover:scale-105 ease-in duration-300"
                 >
                   <a
@@ -154,7 +171,7 @@ const Navbar = () => {
                 </div>
                 {/* GITHUB */}
                 <div
-                  className="rounded-full shadow-lg shadow-gray-400 p-3 
+                  className="rounded-full shadow-lg shadow-gray-400 p-2 
                 cursor-pointer hover:scale-105 ease-in duration-300"
                 >
                   <a
@@ -167,7 +184,7 @@ const Navbar = () => {
                 </div>
                 {/* ANGELLIST */}
                 <div
-                  className="rounded-full shadow-lg shadow-gray-400 p-3 
+                  className="rounded-full shadow-lg shadow-gray-400 p-2 
                 cursor-pointer hover:scale-105 ease-in duration-300"
                 >
                   <a
@@ -180,7 +197,7 @@ const Navbar = () => {
                 </div>
                 {/* RESUME */}
                 <div
-                  className="rounded-full shadow-lg shadow-gray-400 p-3 
+                  className="rounded-full shadow-lg shadow-gray-400 p-2 
                 cursor-pointer hover:scale-105 ease-in duration-300"
                 >
                   <a

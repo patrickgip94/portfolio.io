@@ -3,7 +3,7 @@ import ProjectCard from "./ProjectCard";
 
 const Projects = () => {
   return (
-    <div id="projects" className="w-full lg:h-screen p-2 shadow-sm">
+    <div id="projects" className="w-full lg:h-screen p-2 shadow-sm pt-20">
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center items-centers h-full">
         <p className="text-2xl tracking-widest uppercase text-[#5651E5] py-4 font-bold">
           My Projects

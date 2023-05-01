@@ -238,14 +238,22 @@ const Contact = () => {
             </div>
           </Link>
         </div>
+        <h4
+          className="h-[40px] items-center 
+        justify-center flex text-gray-400/90 text-[11px] md:text-lg "
+        >
+          © Copyright 2023. All rights reserved. Made by
+          <a
+            href="https://www.linkedin.com/in/patrickgip94/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <strong className="p-1 border-b border-transparent hover:text-blue-700 hover:border-b-blue-500 transition ease-in duration-300">
+              Patrick Gip
+            </strong>
+          </a>
+        </h4>
       </div>
-      <h4
-        className="h-[40px] items-center pt-10 
-        justify-center flex text-gray-400/90 text-xs sm:text-sm md:text-lg"
-      >
-        © Copyright 2023. All rights reserved. Made by
-        <span className="text-black/90 pl-2 flex">Patrick Gip</span>
-      </h4>
     </div>
   );
 };

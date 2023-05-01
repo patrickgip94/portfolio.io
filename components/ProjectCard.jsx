@@ -7,7 +7,7 @@ const ProjectCard = ({ name, description, tags, image, source_code_link }) => {
     <div>
       <div
         className="bg-[#003366]/90 p-5 rounded-2xl sm:w-[360px] w-full 
-        hover:scale-110 transition ease-in-out duration-200"
+        hover:scale-105 transition ease-in-out duration-300"
       >
         <div className="relative w-full h-[230px]">
           <Image
