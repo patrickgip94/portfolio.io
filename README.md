@@ -40,7 +40,7 @@
 ![portfolio-2](https://user-images.githubusercontent.com/102221024/235518661-a2e6901a-bf3d-454c-9b00-92fdc5184ef1.png)
 ![portfolio-3](https://user-images.githubusercontent.com/102221024/235518666-aae14e5a-2fda-4ee7-8f3d-de2f0ead2c52.png)
 
-[LIVE](https://gippatrick94.vercel.app/)
+<strong>[LIVE](https://gippatrick94.vercel.app/)</strong>
 
 ### Built With
 
