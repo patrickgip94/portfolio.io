@@ -226,14 +226,6 @@ const projects = [
         name: "css",
         color: "pink-text-gradient",
       },
-      {
-        name: "apollo client",
-        color: "green-text-gradient",
-      },
-      {
-        name: "async storage",
-        color: "green-text-gradient",
-      },
     ],
     image: honeycomb,
     source_code_link: "https://github.com/patrickgip94/Honey-Comb",
