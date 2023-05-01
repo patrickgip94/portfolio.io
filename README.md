@@ -35,10 +35,11 @@
 ## About The Project
 
 [LIVE](https://gippatrick94.vercel.app/)
+![patricklogo](https://user-images.githubusercontent.com/102221024/235518648-d2a5e67f-5b9c-48d2-a102-fc2fff443367.png)
+![portfolio-1](https://user-images.githubusercontent.com/102221024/235518658-7dac15bf-8572-45f4-b41f-fe765b82ac4b.png)
+![portfolio-2](https://user-images.githubusercontent.com/102221024/235518661-a2e6901a-bf3d-454c-9b00-92fdc5184ef1.png)
+![portfolio-3](https://user-images.githubusercontent.com/102221024/235518666-aae14e5a-2fda-4ee7-8f3d-de2f0ead2c52.png)
 
-![patricklogo](https://user-images.githubusercontent.com/102221024/235518175-286f5009-f6a1-4533-9754-c74441f465fa.png)
-![portfolio-1](https://user-images.githubusercontent.com/102221024/235518127-a570812c-57b9-4735-b1ac-d951be96351f.png)
-![portfolio-2](https://user-images.githubusercontent.com/102221024/235518309-b6df7446-0f3f-401f-9e2b-97f7e0936763.png)
 
 
 ### Built With
