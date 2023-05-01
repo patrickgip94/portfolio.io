@@ -36,6 +36,11 @@
 
 [LIVE](https://gippatrick94.vercel.app/)
 
+![patricklogo](https://user-images.githubusercontent.com/102221024/235518175-286f5009-f6a1-4533-9754-c74441f465fa.png)
+![portfolio-1](https://user-images.githubusercontent.com/102221024/235518127-a570812c-57b9-4735-b1ac-d951be96351f.png)
+![portfolio-2](https://user-images.githubusercontent.com/102221024/235518309-b6df7446-0f3f-401f-9e2b-97f7e0936763.png)
+
+
 ### Built With
 
 * [Next.js 13.3](https://nextjs.org/docs) Next.js is an open-source React-based framework for building server-side rendered (SSR) and statically generated (SSG) web applications.
