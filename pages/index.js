@@ -13,12 +13,18 @@ export default function Home() {
         <title>☕ Patrick&apos;s Portfolio</title>
         <link rel="icon" href="/" />
       </Head>
-      <Navbar />
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
+      <div className="relative z-0">
+        <div>
+          <Navbar />
+          <Hero />
+        </div>
+        <About />
+        <Skills />
+        <Projects />
+        <div className="relative z-0">
+          <Contact />
+        </div>
+      </div>
     </div>
   )
 }

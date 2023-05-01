@@ -15,6 +15,15 @@ import vercel from '../assets/vercel.png';
 import typescript from '../assets/typescript.png'
 import github from '../assets/github.png'
 import rentit from '../assets/rentit2.png';
+import onlypans from '../assets/onlypans.png';
+import minbao from '../assets/minbao.png';
+import tesla from '../assets/tesla.png';
+import honeycomb from '../assets/honeycomb.png';
+import layniesWord from '../assets/layniesWord.png'
+
+import web from '../assets/web.png'
+import mobile from '../assets/mobile.png'
+import backend from '../assets/backend.png'
 
 export {
   javascript,
@@ -33,5 +42,13 @@ export {
   vercel,
   typescript,
   github,
-  rentit
+  rentit,
+  onlypans,
+  minbao,
+  tesla,
+  honeycomb,
+  web,
+  mobile,
+  backend,
+  layniesWord
 }

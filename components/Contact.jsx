@@ -67,7 +67,9 @@ const Contact = () => {
         <p className="text-xl tracking-widest uppercase text-[#5651E5] font-bold py-6">
           Contact
         </p>
-        <h2 className="py-4">Get In Touch</h2>
+        <p className="text-black font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">
+          Get In Touch
+        </p>
         <div className="grid lg:grid-cols-5 gap-8">
           {/* Left */}
           <div
@@ -158,13 +160,15 @@ const Contact = () => {
           </div>
 
           {/* Right */}
-          <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
+          <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4 bg-[#003366]">
             <div className="p-4">
               <form onSubmit={handleSubmit} ref={formRef}>
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                   <div className="flex flex-col">
                     {/* NAME */}
-                    <label className="uppercase text-sm py-2">Name</label>
+                    <label className="uppercase text-sm py-2 text-white">
+                      Name
+                    </label>
                     <input
                       type="text"
                       name="name"
@@ -178,7 +182,9 @@ const Contact = () => {
 
                 {/* EMAIL */}
                 <div className="flex flex-col py-2">
-                  <label className="uppercase text-sm py-2">Email</label>
+                  <label className="uppercase text-sm py-2 text-white">
+                    Email
+                  </label>
                   <input
                     type="email"
                     name="email"
@@ -189,7 +195,9 @@ const Contact = () => {
                   />
                 </div>
                 <div className="flex flex-col py-2">
-                  <label className="uppercase text-sm py-2">Subject</label>
+                  <label className="uppercase text-sm py-2 text-white">
+                    Subject
+                  </label>
                   <input
                     type="text"
                     placeholder="Subject Title"
@@ -198,7 +206,9 @@ const Contact = () => {
                   />
                 </div>
                 <div className="flex flex-col py-2">
-                  <label className="uppercase text-sm py-2">Message</label>
+                  <label className="uppercase text-sm py-2 text-white">
+                    Message
+                  </label>
                   <textarea
                     type="text"
                     name="message"
@@ -229,6 +239,13 @@ const Contact = () => {
           </Link>
         </div>
       </div>
+      <h4
+        className="h-[40px] items-center pt-10 
+        justify-center flex text-gray-400/90 text-xs sm:text-sm md:text-lg"
+      >
+        © Copyright 2023. All rights reserved. Made by
+        <span className="text-black/90 pl-2 flex">Patrick Gip</span>
+      </h4>
     </div>
   );
 };
