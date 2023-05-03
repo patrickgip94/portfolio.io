@@ -3,12 +3,12 @@ import ProjectCard from "./ProjectCard";
 
 const Projects = () => {
   return (
-    <div id="projects" className="w-full lg:h-screen p-2 shadow-sm pt-20">
-      <div className="max-w-[1240px] mx-auto flex flex-col justify-center items-centers h-full">
-        <p className="text-2xl tracking-widest uppercase text-[#5651E5] py-4 font-bold">
+    <div id="projects" className="w-full md:h-full p-2 flex items-center py-20">
+      <div className="max-w-[1240px] mx-auto flex flex-col justify-center items-centers">
+        <p className="text-2xl tracking-widest uppercase text-[#5651E5] py-6 font-bold">
           My Projects
         </p>
-        <h2 className="text-black font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">
+        <h2 className="text-black font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] pb-2">
           Project.
         </h2>
 
@@ -22,7 +22,7 @@ const Projects = () => {
           </p>
         </div>
 
-        <div className="mt-5 flex flex-wrap gap-8">
+        <div className="mt-5 flex flex-wrap gap-10">
           {projects.map((project, index) => (
             <ProjectCard key={`project-${index}`} index={index} {...project} />
           ))}

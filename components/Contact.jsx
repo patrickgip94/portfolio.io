@@ -63,8 +63,8 @@ const Contact = () => {
 
   return (
     <div id="contact" className="w-full lg:h-screen">
-      <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
-        <p className="text-xl tracking-widest uppercase text-[#5651E5] font-bold py-6">
+      <div className="max-w-[1240px] m-auto px-2 pt-16 w-full">
+        <p className="text-xl tracking-widest uppercase text-[#5651E5] font-bold pt-10">
           Contact
         </p>
         <p className="text-black font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">
@@ -240,7 +240,7 @@ const Contact = () => {
         </div>
         <h4
           className="h-[40px] items-center 
-        justify-center flex text-gray-400/90 text-[11px] md:text-lg "
+        justify-center flex text-gray-400/90 text-[11px] md:text-lg pt-20"
         >
           © Copyright 2023. All rights reserved. Made by
           <a
