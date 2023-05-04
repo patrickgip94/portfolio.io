@@ -6,10 +6,10 @@ const ProjectCard = ({ name, description, tags, image, source_code_link }) => {
   return (
     <div>
       <div
-        className="bg-[#003366]/90 p-5 rounded-2xl sm:w-[360px] w-full 
+        className="bg-[#003366]/90 p-10 rounded-2xl sm:w-[360px] w-full
         hover:scale-105 transition ease-in-out duration-300"
       >
-        <div className="relative w-full h-[230px]">
+        <div className="relative w-full h-[250px]">
           <Image
             src={image}
             alt={name}
@@ -30,8 +30,8 @@ const ProjectCard = ({ name, description, tags, image, source_code_link }) => {
           </div>
         </div>
 
-        <div className="mt-5 ">
-          <h3 className="text-white font-bold text-[24px]">{name}</h3>
+        <div className="mt-5">
+          <h3 className="text-white font-bold text-[20px]">{name}</h3>
           <p className="mt-2 text-[#fff0f0] text-[14px]">{description}</p>
         </div>
         <div className="mt-4 flex flex-wrap gap-2">

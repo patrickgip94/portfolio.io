@@ -91,11 +91,11 @@ const Navbar = () => {
           <div className="">
             <div className="flex w-full items-center justify-between">
               <Image
-                src="/../public/assets/patlogo.png"
+                src="https://i.imgur.com/tjxGEwB.png"
                 alt="logo"
                 width="175"
                 height="50"
-                className="pr-1"
+                className="pr-5"
               />
               <div
                 onClick={handleNav}
