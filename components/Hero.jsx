@@ -36,7 +36,7 @@ const Hero = () => {
             className="text-lg sm:text-2xl font-bold uppercase text-gray-200 
             pb-2 pt-2 tracking-[5px] sm:tracking-[10px]"
           >
-            Software Developer
+            IT Technical Support
           </h2>
           <div
             className="pl-1 my-4 flex items-center justify-center"
