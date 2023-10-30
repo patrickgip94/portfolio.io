@@ -21,14 +21,17 @@ import {
   tesla,
   honeycomb,
   web,
-  mobile,
-  backend,
-  layniesWord
+  layniesWord,
+  computer
 } from '../public/assets';
 
 const services = [
   {
-    title: "Frontend Developer",
+    title: "IT Technical Support",
+    icon: computer,
+  },
+  {
+    title: "Front-End Developer",
     icon: web,
   },
 ];

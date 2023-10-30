@@ -46,23 +46,23 @@ const About = () => {
               className="mb-2 py-2 text-gray-600 text-sm lg:text-[17px] leading-[30px]"
               style={{ maxWidth: "30em" }}
             >
-              A highly motivated individual with a passion for software
-              engineering and a commitment to ongoing learning. With a strong
-              aptitude for creative problem-solving and a collaborative mindset,
-              I strive to develop innovative applications that push boundaries
-              and exceed expectations. Beyond my work in technology, I enjoy
-              staying energized through pursuits such as coffee appreciation ☕,
-              video gaming 🎮, and savoring fine cuisine 🍣.
+              A highly motivated individual with a passion for technology and a
+              commitment to ongoing learning. With a strong aptitude for
+              creative problem-solving and a collaborative mindset, I strive to
+              develop innovative applications that push boundaries and exceed
+              expectations. Beyond my work in technology, I enjoy staying
+              energized through pursuits such as coffee appreciation ☕, video
+              gaming 🎮, and savoring fine cuisine 🍣.
             </p>
             <p className="mb-2 py-2 text-gray-600 text-sm lg:text-[17px] leading-[30px]">
               My professional journey has been characterized by perseverance and
-              determination. Prior to my entry into the field of software
-              engineering, I was a second-year nursing student. However, driven
-              by my long-standing vision to become a software engineer, I took
-              the initiative to pursue this path, despite my initial lack of
-              direction. Through focused effort and dedication, I have honed my
-              skills and developed a deep understanding of the software
-              engineering landscape.
+              determination. Prior to my entry into the field of technology, I
+              was a second-year nursing student. However, driven by my
+              long-standing vision to become a cybersecurity professional, I
+              took the initiative to pursue this path, despite my initial lack
+              of direction. Through focused effort and dedication, I have honed
+              my skills and developed a deep understanding of the cybersecurity
+              landscape.
             </p>
             <p className="mb-2 py-2 text-gray-600 text-sm lg:text-[17px] leading-[30px]">
               In addition to my professional pursuits, I am also a devoted

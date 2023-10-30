@@ -88,7 +88,9 @@ const Contact = () => {
               </div>
               <div>
                 <h2 className="py-2">Patrick Gip</h2>
-                <p className="font-semibold">Front-End Developer</p>
+                <p className="font-semibold">
+                  IT Technical Support & Front-End Developer
+                </p>
                 <p className="py-2">
                   I am currently open to considering opportunities for freelance
                   work or full-time employment.. Contact me and let&apos;s talk!

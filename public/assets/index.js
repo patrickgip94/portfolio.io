@@ -20,6 +20,7 @@ import minbao from '../assets/minbao.png';
 import tesla from '../assets/tesla.png';
 import honeycomb from '../assets/honeycomb.png';
 import layniesWord from '../assets/layniesWord.png'
+import computer from '../assets/computer.bmp'
 
 import web from '../assets/web.png'
 import mobile from '../assets/mobile.png'
@@ -50,5 +51,6 @@ export {
   web,
   mobile,
   backend,
-  layniesWord
+  layniesWord,
+  computer
 }
