@@ -121,27 +121,6 @@ const projects = [
     source_code_link: "https://github.com/patrickgip94/Laynies-Word-Adventure"
   },
   {
-    name: "OnlyPans",
-    description:
-      "OnlyPans is a cutting-edge app designed specifically for chefs who want to sell their recipes and tutorial videos to a broader audience.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "react-native",
-        color: "green-text-gradient",
-      },
-      {
-        name: "expo",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: onlypans,
-    source_code_link: "https://github.com/patrickgip94/OnlyPans",
-  },
-  {
     name: "Minbao",
     description:
       "Minbao is a website that functions as a clone of IMDb, offering users information and reviews about movies, TV shows, and other forms of entertainment.",
